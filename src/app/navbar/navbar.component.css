@@ -1,0 +1,118 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 185px;
+
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+
+.sidebar .logo-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  position: relative;
+}
+
+.sidebar .logo-details img {
+  height: auto;
+  max-height: 80px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sidebar .logo-details .logo_name {
+  margin-top: 70px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease;
+  transition-delay: 0.1s;
+}
+
+.sidebar .nav-links {
+  height: 100%;
+  padding: 30px 0 150px 0;
+  overflow: auto;
+}
+
+.sidebar .nav-links::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li:hover {
+  background: #1d1b31;
+}
+
+.sidebar .nav-links li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.sidebar .nav-links li a i {
+  height: 50px;
+  min-width: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li a .link_name {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li .sub-menu.blank {
+  display: none;
+}
+
+.sidebar .profile-details {
+  position: fixed;
+  bottom: 0;
+  width: 185px; /* Ajustado al ancho de la barra lateral */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar .profile-details .social-icons {
+  display: flex;
+  gap: 10px; /* Espacio entre los íconos */
+}
+
+.sidebar .profile-details .social-icons a {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.sidebar .profile-details .social-icons a:hover {
+  color: #1d1b31;
+}
+.logo_name {
+  font-weight: bold;
+}
